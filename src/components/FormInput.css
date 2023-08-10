@@ -1,0 +1,32 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+input{
+    padding: 12px;
+    margin: 4px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+label{
+    font-size: 12px;
+    color: gray;
+}
+
+span{
+    font-size: 12px;
+    margin: 0 0 8px 0;
+    color: red;
+    display: none;
+}
+
+input:invalid[focusLeave= 'true'] ~ span{
+    display: block;
+}
