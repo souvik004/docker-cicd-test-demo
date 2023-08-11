@@ -80,9 +80,9 @@ const Form = () => {
   const handleSubmit = (e) => { 
     e.preventDefault();
     if(values.username.trim() !== '' && values.password.trim() !== '' && values.email.trim() !== '') {
-      console.log("blank")
+      // console.log("blank")
     }
-    console.log(values);
+    // console.log(values);
   };
 
   const onChangeHandler = (e) => {
